@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="1.打开Wifi" />
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="2.关闭Wifi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wifi名称："
+                />
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="wifi名称"
+                android:text="XMG_2.4G"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="wifi密码："
+                />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="wifi密码"
+                android:inputType="textPassword"
+                android:text="GM025ITM"
+                />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="3.连接指定的wifi"
+        android:gravity="center"
+        />
+        <Button
+            android:id="@+id/btn_unconnect"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="4.断开当前连接的wifi"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="5.搜索wifi"
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ListView
+            android:id="@+id/ls_wifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/btn_text_net"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="测试网络"
+                />
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@mipmap/ic_launcher"
+                />
+        </LinearLayout>
+      
+
+    </LinearLayout>
+
+
+</LinearLayout>
